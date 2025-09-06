@@ -55,9 +55,9 @@ export default function ProductCard({ product }) {
             <img
               src={product.gallery[0]}
               alt={product.name}
-              className={`w-full h-full object-cover transition-transform duration-200 ${
-                inStock ? '' : 'opacity-40'
-              }`}
+              className={`w-full h-full object-contain transition-transform duration-200 ...
+ ${inStock ? '' : 'opacity-40'
+                }`}
             />
           </div>
 
