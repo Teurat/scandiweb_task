@@ -21,7 +21,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <Link to="/" aria-label="Home" className="flex items-center h-full mr-4">
+        <Link to="/" aria-label="Home" className="flex items-center h-full mr-[14rem]">
           <img src={bagIcon} alt="logo" className="w-6 h-6" />
         </Link>
 
