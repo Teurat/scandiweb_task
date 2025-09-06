@@ -13,21 +13,18 @@ export default function Header() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-white shadow">
-     <div className="h-20 mx-auto flex items-center justify-center gap-16 px-8 max-w-screen-xl">
+      <div className="h-20 mx-auto flex items-center justify-between px-8 max-w-screen-xl">
 
-        {/* Categories */}
         <nav className="flex gap-8 h-full items-center">
           {data?.categories.map((c) => (
             <CategoryLink key={c.name} name={c.name} />
           ))}
         </nav>
 
-        {/* Logo */}
-        <Link to="/" aria-label="Home" className="flex items-center h-full">
+        <Link to="/" aria-label="Home" className="flex items-center h-full mr-4">
           <img src={bagIcon} alt="logo" className="w-6 h-6" />
         </Link>
 
-        {/* Cart */}
         <div className="flex items-center h-full">
           <button
             data-testid="cart-btn"
